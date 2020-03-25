@@ -1,0 +1,108 @@
+{
+    /// Telemetry
+    "telemetry.enableTelemetry":     false,
+    "telemetry.enableCrashReporter": false,
+
+    "editor.fontFamily":    "'PragmataPro Mono Liga'",
+    "editor.fontSize":      13,
+    "editor.fontLigatures": true,
+
+    "editor.lineNumbers":    "on",
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+
+    "editor.insertSpaces":       true,
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace":   "trailing",
+    "editor.wordWrap":           "off",
+
+    "editor.formatOnPaste":    true,
+    "editor.formatOnSave":     true,
+    "editor.suggestSelection": "first",
+
+    "files.eol":                    "auto",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines":      true,
+
+    "breadcrumbs.enabled":    false,
+    "explorer.confirmDelete": false,
+
+    "workbench.colorTheme":      "Gruvbox Dark Medium",
+    "workbench.iconTheme":       "vs-seti",
+    "workbench.settings.editor": "json",
+    "workbench.startupEditor":   "none",
+
+    "workbench.activityBar.visible":  false,
+    "workbench.editor.showTabs":      true,
+    "workbench.editor.enablePreview": true,
+    // "workbench.editor.enablePreviewFromQuickOpen": true,
+
+    "zenMode.fullScreen": false,
+
+    "terminal.external.osxExec":           "Alacritty.app",
+    "terminal.integrated.rendererType":    "canvas",
+    "terminal.integrated.copyOnSelection": true,
+
+    /// Vim
+    "vim.leader":             "<space>",
+    "vim.useCtrlKeys":        true,
+    "vim.useSystemClipboard": true,
+
+    "vim.surround":   true,
+    "vim.easymotion": true,
+
+    "vim.whichwrap": "h,l,<,>,[,]",
+    "vim.visualstar": true,
+    "vim.hlsearch":   true,
+    "vim.incsearch":  true,
+    "vim.ignorecase": true,
+    "vim.foldfix":    true,
+
+    "vim.statusBarColorControl": false,
+
+    "vim.easymotionKeys":             "hklyuiopnmqwertzxcvbasdgjf",
+    "vim.easymotionMarkerFontWeight": "bold",
+    // "vim.easymotionMarkerHeight":       18,
+    // "vim.easymotionMarkerWidthPerChar": 12,
+
+    "vim.visualModeKeyBindingsNonRecursive": [
+        { "before": [ ";" ], "after": [ ":" ] },
+        { "before": [ ":" ], "after": [ ";" ] },
+        { "before": [ ">" ], "after": [ ">", "g", "v" ] },
+        { "before": [ "<" ], "after": [ "<", "g", "v" ] },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": [ ";" ], "after": [ ":" ] },
+        { "before": [ ":" ], "after": [ ";" ] },
+        { "before": [ "j" ], "after": [ "g", "j" ] },
+        { "before": [ "k" ], "after": [ "g", "k" ] },
+        { "before": [ ">" ], "after": [ ">", ">" ] },
+        { "before": [ "<" ], "after": [ "<", "<" ] },
+        { "before": [ "Y" ], "after": [ "y", "$" ] },
+        { "before": [ "x" ], "after": [ "\"", "_", "x" ] },
+        { "before": [ "s" ], "after": [ "\"", "_", "s" ] },
+    ],
+
+    /// Json with comments
+    "[jsonc]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave":  false,
+        "editor.suggest.insertMode": "replace",
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+    },
+
+    /// Rust
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust"
+    },
+
+    /// Python
+    "python.languageServer": "Microsoft",
+
+    /// Java
+    // "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home",
+    "java.semanticHighlighting.enabled": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
+}

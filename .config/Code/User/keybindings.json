@@ -1,0 +1,23 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+        "key": "alt+h",
+        "command": "workbench.action.focusLeftGroup",
+    },
+    {
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+        "key": "alt+l",
+        "command": "workbench.action.focusRightGroup",
+    },
+    {
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+        "key": "alt+k",
+        "command": "workbench.action.focusAboveGroup",
+    },
+    {
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'",
+        "key": "alt+j",
+        "command": "workbench.action.focusBelowGroup",
+    },
+]

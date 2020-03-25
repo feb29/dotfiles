@@ -1,0 +1,77 @@
+[user]
+    name  = Kohei Watanabe
+    email = kohei@vec.jp
+
+[github]
+    user = mypmc
+
+[ghq]
+    root = ~/src
+
+[core]
+    editor    = vim
+    pager     = diff-so-fancy | less --tabs=4 -RFX
+    quotepath = false
+    symlinks  = true
+
+[push]
+    default = simple
+
+[pull]
+    ff = only
+
+[merge]
+    ff = false
+
+[fetch]
+    prune = true
+
+[alias]
+    amend  = commit --amend
+    master = switch master
+    pick   = cherry-pick
+
+    st = status
+    ls = ls-files
+    wk = worktree
+
+    rh1 = reset HEAD^
+    rh2 = reset HEAD^^
+    rh3 = reset HEAD^^^
+
+    logg    = log --graph --decorate --oneline --abbrev-commit --all
+    last    = cat-file commit HEAD
+    deleted = log --diff-filter=D --summary
+    ignored = ls-files -o -i --exclude-standard
+
+    ; today = "!f () {\
+    ;     git log --oneline --branches --since=midnight --date=iso \
+    ;     --author=\"$(git config user.name)\" \
+    ;     --format=\"- %s\";\
+    ;     };f"
+
+[gui]
+    encoding = utf-8
+
+[color]
+    ui          = auto
+    diff        = auto
+    grep        = auto
+    interactive = auto
+    ; status      = auto
+    ; brach       = auto
+
+[color "branch"]
+    current = cyan
+    local   = yellow
+    remote  = green
+
+[color "status"]
+    added     = yellow
+    changed   = green
+    untracked = cyan
+
+[filter "lfs"]
+    clean    = git-lfs clean %f
+    smudge   = git-lfs smudge %f
+    required = true
